@@ -52,7 +52,7 @@ ggplot()+
           size = 0.05, color="black")+ # , show.legend = FALSE
   scale_fill_gradientn(colors = hot_r, na.value = "grey50" )+ # , breaks=seq(0, 1200, 200)
   guides(fill = guide_colourbar(frame.colour = "black", ticks.colour="black"))+
-  labs(fill = "People with 1 Dose")+
+  labs(fill = "Vaccines per 100 people")+
   theme_void()
 
 # Linear regression to see if the total population is a good predictor of the number of doses distributed
@@ -64,8 +64,11 @@ ggplot(full_data_frame, aes(x=TotalPopulation, y=People_all_doses))+
 
 # Are any of the health outcomes correlated with normalized vaccine data?
 # At this phase of vaccine roll-out, what would be a better predictor?
-ggplot(full_data_frame, aes(x=DIABETES_CrudePrev, y=full_vac_per_pop))+
+ggplot(full_data_frame, aes(x=TEETHLOST_CrudePrev, y=full_vac_per_pop))+
   geom_point()+
   geom_smooth(method='lm', formula= y~x)+
-  labs(x="Total Population", y="People with at least 1 dose")+
+  labs(x="Teeth Lost Prevalence", y="Vaccines per 100 people")+
   theme_bw()
+
+
+

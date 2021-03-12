@@ -2,6 +2,7 @@
 # R code to plot vaccination by ZIP in Texas on map
 # Compare with CDC PLACES data
 # For Gaby's Class Fri.March.21.2021
+# I had a lot of fun
 ########################################################
 
 # Download libraries before use

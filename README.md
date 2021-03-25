@@ -1,5 +1,6 @@
 # COVID R Tutorial
 R tutorial on plotting/analyzing COVID-19 vaccination data by ZIP code in Texas.
+Walk through available here: https://youtu.be/KJaJLb6LkAg
 
 0. Make a github account
 
